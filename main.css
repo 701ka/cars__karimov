@@ -1,7 +1,9 @@
 :root {
   --main-font: "Plus Jakarta Sans";
 }
-
+body {
+  font-family: var(--main-font);
+}
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +14,12 @@
   width: 1340px;
   margin: 0 auto;
   padding: 0 20px;
+}
+.ad {
+  font-family: var(--main-font);
+}
+main {
+  background-color: #f6f7f9;
 }
 .header__inner {
   display: flex;
@@ -140,20 +148,145 @@ header {
   border: 4px solid #3563e9;
 }
 .rent__item_top {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  margin-bottom: 16px;
 }
 .rent__item_title {
+  font-size: 16px;
+  line-height: 150%;
 }
 .rent__item_list {
+  display: flex;
+  /* column-gap: 20px; */
+  justify-content: space-between;
 }
 .rent__inner__item {
+  display: flex;
+  flex-flow: column;
+  row-gap: 8px;
+  border-right: 1px solid #c3d4e966;
+  padding-right: 24px;
 }
+.rent__inner__item:nth-child(3n) {
+  border: none;
+}
+
 .rent__title {
+  line-height: 150%;
+  letter-spacing: -1px;
+  font-weight: 700;
+  font-size: 16px;
 }
 .rent__choouse {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.paski_chiziq {
+  margin-bottom: -3px;
+  color: #1a202c;
 }
 .rent__city {
+  font-size: 12px;
+  color: #90a3bf;
+  line-height: 100%;
 }
-.fa-solid {
+
+.ad__bottom_left {
+  width: 576px;
+  padding: 24px 48px;
+  background-color: #fff;
+  margin-top: 32px;
+  border-radius: 10px;
+  margin-bottom: 32px;
 }
-.fa-angle-down {
+.ad__bottom {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+.ad__bottom_center {
+  color: white;
+  background-color: #3563e9;
+  border-radius: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  padding: 18px;
+  margin: 0 40px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.arrow {
+  font-size: 24px;
+  font-weight: 400;
+}
+.container1 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.container1 {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  user-select: none;
+  transition: 100ms;
+}
+
+.checkmark {
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  transition: 100ms;
+  animation: dislike_effect 400ms ease;
+}
+
+.container1 input:checked ~ .checkmark path {
+  fill: #ff5353;
+  stroke-width: 0;
+}
+
+.container1 input:checked ~ .checkmark {
+  animation: like_effect 400ms ease;
+}
+
+/* .container1:hover {
+  transform: scale(1.1);
+} */
+
+@keyframes like_effect {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes dislike_effect {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
