@@ -311,6 +311,11 @@ header {
   font-weight: 600;
   font-size: 16px;
 }
+.products__inner {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
 
 .products__item {
   display: flex;
@@ -388,7 +393,6 @@ header {
   /* margin-top: 24px; */
 }
 
-
 .products__footer_left {
   display: flex;
   align-items: center;
@@ -425,5 +429,120 @@ header {
   text-decoration: none;
 }
 .products__btn {
+  font-weight: 600;
+}
+.productss__inner {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+.products__end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.products__end_txt {
+  font-size: 14px;
+  letter-spacing: -1px;
+  color: #90a3bf;
+  font-weight: 500;
+  line-height: 150%;
+}
+.products__bottom__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 720px;
+}
+.products__end__link {
+  text-decoration: none;
+}
+.products__end_btn {
+  border: none;
+}
+footer {
+  padding-top: 80px;
+  margin-bottom: 60px;
+}
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 36px;
+  border-bottom: 1px solid #13131329;
+  margin-bottom: 36px;
+}
+.footer__left_top {
+  width: 265px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  align-self: start;
+}
+.footer__left_title {
+  font-size: 32px;
+  line-height: 150%;
+  color: #3563e9;
+  letter-spacing: -1px;
+}
+.footer__left_text {
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -1px;
+  font-weight: 500;
+}
+.footer__right_top {
+  display: flex;
+  column-gap: 60px;
+  justify-content: center;
+  align-items: center;
+}
+.footer__list_wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  align-items: start;
+  justify-content: center;
+}
+.footer__right_title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.8px;
+}
+.footer__right_list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  justify-content: center;
+}
+
+.footer__item_link {
+  text-decoration: none;
+  color: #13131399;
+}
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__bottom_right {
+  line-height: 150%;
+  letter-spacing: -0.8px;
+  font-weight: 600;
+}
+.footer__bottom_left {
+  display: flex;
+  column-gap: 60px;
+}
+.left__policy {
+  line-height: 150%;
+  letter-spacing: -0.8px;
   font-weight: 600;
 }
