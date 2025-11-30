@@ -549,6 +549,181 @@ footer {
 .header__input1 {
   display: none;
 }
+.rating:not(:checked) > input {
+  position: absolute;
+  appearance: none;
+}
+
+.rating:not(:checked) > label {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+  color: #666;
+}
+
+.rating:not(:checked) > label:before {
+  content: "★";
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+  color: #e58e09;
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #ff9e0b;
+}
+
+.rating > input:checked ~ label {
+  color: #ffa723;
+}
+.nissan__inner {
+  display: flex;
+  column-gap: 23px;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.nissan__top_left_img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 492px;
+  padding: 24px;
+  background-image: url("img/nissan_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  border-radius: 10px;
+}
+.nissan__title {
+  font-size: 32px;
+  width: 372px;
+
+  line-height: 150%;
+  letter-spacing: -0.9px;
+  font-weight: 600;
+}
+.nissan__txt {
+  font-size: 16px;
+  margin-top: 16px;
+  margin-bottom: 32px;
+  width: 264px;
+  line-height: 150%;
+  letter-spacing: -0.9px;
+  font-weight: 500;
+}
+.nissan__img {
+  margin: 0 auto;
+}
+.nissan__bottom_img {
+  display: flex;
+}
+.nissan__bottom_list {
+  display: flex;
+  list-style: none;
+  /* column-gap: 24px; */
+  width: 492px;
+  margin-top: 24px;
+  justify-content: space-between;
+}
+
+.nissan__top_right {
+  display: flex;
+  flex-direction: column;
+  width: 492px;
+  padding: 24px;
+}
+.info__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top__right_title {
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: -0.9px;
+}
+
+.nissan__stars {
+  display: flex;
+  margin-top: 6px;
+  margin-bottom: 32px;
+  align-items: center;
+}
+.stars__info {
+  margin-top: 2px;
+  font-style: 14px;
+  letter-spacing: 3%;
+  color: #596780;
+}
+.nissan__info {
+  font-size: 20px;
+  letter-spacing: -0.9px;
+  margin-bottom: 32px;
+  color: #596780;
+  line-height: 200%;
+}
+.nissan__types {
+  display: flex;
+  justify-content: space-between;
+}
+.types__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.types__item {
+  width: 200px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.types__text {
+  color: #90a3bf;
+}
+.types__text:nth-child(2n) {
+  color: #596780;
+  font-weight: 600;
+}
+.nissan__bottom {
+  margin-top: 68px;
+  display: flex;
+  justify-content: space-between;
+}
+.nissan__prices {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+.nissan__prices span {
+  display: flex;
+  align-items: flex-end;
+  font-weight: 700;
+}
+.nissan__price {
+  font-size: 28px;
+  line-height: 100%;
+}
+.prices__days {
+  /* margin-top: 2px; */
+  color: #90a3bf;
+  margin-left: 3px;
+}
+.nissan__fake_price {
+  color: #90a3bf;
+  font-weight: 700;
+}
+.bottom__tbn {
+  padding: 16px 32px;
+}
+
 @media (max-width: 390px) {
   .container {
     width: 370px;
@@ -717,5 +892,70 @@ footer {
   }
   .footer__bottom_right {
     grid-column: 1 / 3;
+  }
+  .nissan__inner {
+    flex-direction: column;
+  }
+
+  .nissan__top_left_img {
+    width: 327px;
+    margin: 0 auto;
+  }
+  .nissan__title {
+    font-size: 16px;
+    width: 240px;
+  }
+  .nissan__txt {
+    font-size: 12px;
+    width: 216px;
+  }
+  .nissan__img {
+    width: 190px;
+    height: 60px;
+  }
+
+  .nissan__bottom_list {
+    justify-content: center;
+    column-gap: 20px;
+  }
+
+  .nissan__images {
+    width: 96px;
+    height: 64px;
+  }
+  .nissan__top_right {
+    width: 327px;
+  }
+  .top__right_title {
+    font-size: 20px;
+  }
+  .container1 {
+    display: none;
+  }
+  .rating:not(:checked) > label {
+    font-size: 14px;
+  }
+  .stars__info {
+    font-size: 12px;
+  }
+  .nissan__info {
+    font-size: 13px;
+  }
+  .nissan__types {
+    font-size: 12px;
+  }
+
+  .types__item {
+    width: 124px;
+  }
+
+  .nissan__price {
+    font-size: 20px;
+  }
+  .prices__days {
+    font-size: 12px;
+  }
+  .nissan__fake_price {
+    font-size: 12px;
   }
 }
