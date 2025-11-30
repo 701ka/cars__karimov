@@ -655,6 +655,7 @@ footer {
   margin-top: 6px;
   margin-bottom: 32px;
   align-items: center;
+  column-gap: 4px;
 }
 .stars__info {
   margin-top: 2px;
@@ -722,6 +723,81 @@ footer {
 }
 .bottom__tbn {
   padding: 16px 32px;
+}
+
+.reviews {
+  padding: 24px;
+  margin-top: 24px;
+}
+.reviews__top {
+  display: flex;
+  align-items: center;
+  column-gap: 18px;
+}
+.reviews__top_right {
+  margin-right: 24px;
+}
+.reviews__title {
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: -1px;
+}
+.reviews__number {
+  font-size: 16px;
+  padding: 6px 16px;
+  color: #fff;
+  background-color: #3563e9;
+  border-radius: 8px;
+  font-weight: 700;
+  margin-top: 5px;
+  line-height: 100%;
+}
+.reviews__bottom {
+  display: flex;
+  column-gap: 16px;
+  margin-top: 32px;
+}
+
+.reviews__profile_pic {
+  border-radius: 50%;
+  object-fit: cover;
+}
+.reviews__right_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reviews__name {
+  font-size: 25px;
+  line-height: 150%;
+}
+.reviews__job {
+  font-size: 18px;
+  font-weight: 500;
+  color: #90a3bf;
+  line-height: 150%;
+}
+
+.rewies__date {
+  color: #90a3bf;
+  font-size: 18px;
+  line-height: 150%;
+}
+.reviews__info {
+  color: #596780;
+  line-height: 200%;
+  font-size: 18px;
+  margin-top: 12px;
+  /* display: flex; */
+}
+
+.rating .star {
+  font-size: 24px;
+  cursor: pointer;
+  color: #ccc;
+}
+.rating .star.active {
+  color: gold;
 }
 
 @media (max-width: 390px) {
@@ -957,5 +1033,39 @@ footer {
   }
   .nissan__fake_price {
     font-size: 12px;
+  }
+  .reviews__profile_pic {
+    width: 44px;
+    height: 44px;
+  }
+  .reviews__name {
+    font-size: 19px;
+  }
+  .reviews__job {
+    font-size: 15px;
+  }
+  .reviews__top_right {
+    margin-right: 0px;
+  }
+  .rewies__date {
+    font-size: 16px;
+  }
+  .rating .star {
+    font-size: 15px;
+  }
+  .reviews__info {
+    font-size: 15px;
+  }
+  .reviews__info::after {
+    content: "...";
+  }
+  .reviews__hidden_text {
+    display: none;
+  }
+  .reviews__title {
+    line-height: 150%;
+  }
+  .reviews__number {
+    line-height: 150%;
   }
 }
