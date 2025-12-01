@@ -18,7 +18,9 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
-
+#title {
+  cursor: pointer;
+}
 main {
   background-color: #f6f7f9;
   padding-top: 32px;
@@ -36,6 +38,7 @@ main {
 .header__title {
   font-size: 32px;
   letter-spacing: -3%;
+  color: #3563e9;
 }
 .header__input {
   width: 492px;
@@ -139,9 +142,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .btn2 {
   background-color: #54a6ff;
+  cursor: pointer;
 }
 .ad__pic {
   align-self: center;
@@ -342,6 +347,7 @@ header {
   flex-direction: column;
 }
 .item__title {
+  color: #000;
   font-size: 20px;
   line-height: 150%;
   letter-spacing: -1.1px;
@@ -421,6 +427,7 @@ header {
 .products__price {
   font-size: 20px;
   vertical-align: middle;
+  color: #000;
 }
 .products__day {
   font-weight: 700;
@@ -597,7 +604,7 @@ footer {
   padding: 24px;
   background-image: url("img/nissan_bg.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size; */
   color: #fff;
   border-radius: 10px;
 }
@@ -638,6 +645,8 @@ footer {
   flex-direction: column;
   width: 492px;
   padding: 24px;
+  background-color: #fff;
+  border-radius: 8px;
 }
 .info__top {
   display: flex;
@@ -790,7 +799,10 @@ footer {
   margin-top: 12px;
   /* display: flex; */
 }
-
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
 .rating .star {
   font-size: 24px;
   cursor: pointer;
@@ -799,7 +811,19 @@ footer {
 .rating .star.active {
   color: gold;
 }
-
+.not-found__img {
+  margin: 0 auto;
+  display: none;
+}
+.not-found {
+  background-image: url("img/stich.webp");
+  background-position: calc(50%);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.not-found-inner {
+  height: 366px;
+}
 @media (max-width: 390px) {
   .container {
     width: 370px;
@@ -816,10 +840,15 @@ footer {
     /* display: inline-block; */
     order: 1;
   }
+  .title__link {
+    color: #3563e9;
+  }
   .header__title {
+    color: #3563e9;
     font-size: 24px;
     line-height: 120%;
     order: 1;
+    font-weight: 700;
   }
   .header__input {
     order: 2;
@@ -1067,5 +1096,19 @@ footer {
   }
   .reviews__number {
     line-height: 150%;
+  }
+  .mmar {
+    margin-top: 23px;
+  }
+  .not-found {
+    background-size: 1000px 400px;
+    background-position: calc(50% - 120px);
+  }
+  .not-found__img {
+    display: inline-block;
+  }
+  .not-found-inner {
+    display: flex;
+    align-items: flex-end;
   }
 }

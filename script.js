@@ -13,3 +13,10 @@ document.querySelectorAll(".rating").forEach((rating) => {
     });
   });
 });
+document.getElementById("title").onclick = () => {
+  window.location.href = "index.html";
+};
+document.getElementById("notfound").onclick = () => {
+  window.location.href = "not-found.html";
+};
+
