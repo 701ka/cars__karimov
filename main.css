@@ -815,14 +815,14 @@ a {
   margin: 0 auto;
   display: none;
 }
-.not-found {
+.main {
   background-image: url("img/stich.webp");
   background-position: calc(50%);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .not-found-inner {
-  height: 366px;
+  height: 480px;
 }
 @media (max-width: 390px) {
   .container {
@@ -854,6 +854,9 @@ a {
     order: 2;
 
     display: none;
+  }
+  i {
+    display: inline-block;
   }
   .header__input1 {
     display: inline-block;

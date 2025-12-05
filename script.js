@@ -16,7 +16,17 @@ document.querySelectorAll(".rating").forEach((rating) => {
 document.getElementById("title").onclick = () => {
   window.location.href = "index.html";
 };
+document.getElementById("titlee").onclick = () => {
+  window.location.href = "index.html";
+};
+document.getElementById("titleee").onclick = () => {
+  window.location.href = "index.html";
+};
 document.getElementById("notfound").onclick = () => {
   window.location.href = "not-found.html";
 };
-
+document.querySelectorAll(".footer__left_title").forEach((el) => {
+  el.addEventListener("click", () => {
+    window.location.href = "not-found.html";
+  });
+});
